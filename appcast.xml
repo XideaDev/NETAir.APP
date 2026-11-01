@@ -6,15 +6,35 @@
     <description>NexAir 自动更新推送流 (托管于 GitHub Releases)</description>
     <language>zh-CN</language>
 
-    <!-- 演示/首发版本项 -->
+    <!-- v1.3.3 版本项 -->
+    <item>
+      <title>NexAir 1.3.3</title>
+      <pubDate>Sun, 01 Nov 2026 20:30:00 +0800</pubDate>
+      <sparkle:version>57</sparkle:version>
+      <sparkle:shortVersionString>1.3.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>NexAir 1.3.3 版本更新</h3>
+        <ul>
+          <li><strong>网络出站与分组增强</strong>：侧边栏支持平滑可折叠（独立代理/订阅源/按地区），修复单代理选中状态联动；</li>
+          <li><strong>地区智能归一化</strong>：重构地区解析管线，彻底消除残留符号，统一接入原生自绘矢量国旗组件；</li>
+          <li><strong>Agent 桥接全链路重构</strong>：剔除假数据，打通跨进程持久化审计日志流，内置 Cookie 访问安全阻断；</li>
+          <li><strong>静默更新优化</strong>：后台自动下载更新，并在就绪后于底部状态栏提示重启应用。</li>
+        </ul>
+      ]]></description>
+      
+      <enclosure
+        url="https://github.com/XideaDev/NexAir.APP/releases/download/v1.3.3/NexAir-1.3.3-Universal.zip"
+        length="52505415"
+        type="application/octet-stream" />
+    </item>
+
     <item>
       <title>NexAir 1.2.2</title>
       <pubDate>Sun, 01 Nov 2026 12:00:00 +0800</pubDate>
       <sparkle:version>44</sparkle:version>
       <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      
-      <!-- 若为关键强制更新，只需在此添加: <sparkle:criticalUpdate sparkle:version="1.2.2" /> -->
       <description><![CDATA[
         <h3>NexAir 1.2.2 版本更新</h3>
         <ul>
@@ -23,10 +43,8 @@
           <li><strong>Sparkle 自动更新</strong>：集成启动自检、右下角状态指示与安全升级机制。</li>
         </ul>
       ]]></description>
-      
       <enclosure
         url="https://github.com/XideaDev/NexAir.APP/releases/download/v1.2.2/NexAir-1.2.2.zip"
-        sparkle:edSignature="EMBEDDED_ED25519_SIGNATURE_PLACEHOLDER"
         length="48200000"
         type="application/octet-stream" />
     </item>
