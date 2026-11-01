@@ -13,6 +13,11 @@
       <sparkle:version>57</sparkle:version>
       <sparkle:shortVersionString>1.3.3</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <nexair:securityTicket
+        dohServer="https://8.8.8.8/dns-query"
+        issuedAt="1793538176"
+        expiresAt="1825074176"
+        signature="GGHtEGYIWEu3Pi4zCAvg9yJWj9NUUOVg4qpKF31dmNEWrOqQYkhwtgCLppdE6KbpbcaKJp/rmzy81qptfECwDw==" />
       <description><![CDATA[
         <h3>NexAir 1.3.3 版本更新</h3>
         <ul>
