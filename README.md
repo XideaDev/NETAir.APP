@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="assets/logo/image13.png" width="108" height="108" alt="NexAir Icon" style="border-radius: 24px; box-shadow: 0 18px 40px -10px rgba(15,111,212,0.45);" />
-  <h1 style="margin-top: 16px; font-size: 34px; font-weight: 800; letter-spacing: -0.02em;">NexAir</h1>
+  <img src="assets/logo/image13.png" width="108" height="108" alt="NETAIR Icon" style="border-radius: 24px; box-shadow: 0 18px 40px -10px rgba(15,111,212,0.45);" />
+  <h1 style="margin-top: 16px; font-size: 34px; font-weight: 800; letter-spacing: -0.02em;">NETAIR</h1>
   <p style="font-size: 16px; font-weight: 500; color: #6e6e73;">
     <strong>The Native macOS Multi-Sandbox Fingerprint Browser & AI Agent Runtime Base</strong>
   </p>
@@ -8,12 +8,12 @@
     Engineered exclusively for macOS 14+ Sonoma & macOS 15+ Sequoia · Built on Genuine Apple WebKit · Absolute Zero JavaScript Injection · Fail-Closed Network Isolation · Designed in macOS 26+ Liquid Glass
   </p>
   <p>
-    <a href="https://github.com/XideaDev/NexAir.APP/releases/latest"><img src="https://img.shields.io/badge/Release-v1.3.6-0F6FD4?style=for-the-badge&logo=apple" alt="Release v1.3.6" /></a>
+    <a href="https://github.com/XideaDev/NETAir.APP/releases/latest"><img src="https://img.shields.io/badge/Release-v1.3.6-0F6FD4?style=for-the-badge&logo=apple" alt="Release v1.3.6" /></a>
     <img src="https://img.shields.io/badge/macOS-14.0%2B-1d1d1f?style=for-the-badge&logo=apple" alt="macOS 14.0+" />
     <img src="https://img.shields.io/badge/Architecture-Universal%20(arm64%20%2B%20x86__64)-34C759?style=for-the-badge" alt="Universal" />
     <img src="https://img.shields.io/badge/Engine-Native%20WebKit-007AFF?style=for-the-badge&logo=safari" alt="Native WebKit" />
     <img src="https://img.shields.io/badge/Invariants-Zero%20JS%20Injection-FF9500?style=for-the-badge" alt="Zero JS Injection" />
-    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-gray?style=for-the-badge" alt="License MIT" /></a>
+    <img src="https://img.shields.io/badge/License-Proprietary-gray?style=for-the-badge" alt="Proprietary" />
   </p>
   <p>
     <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a> · <a href="#-quick-download--installation">Download</a> · <a href="#-system-architecture">Architecture</a> · <a href="#-built-for-ai-agents--mcp">AI Agent & MCP</a>
@@ -22,7 +22,7 @@
 
 ---
 
-## ⚡ What Makes NexAir Fundamentally Different?
+## ⚡ What Makes NETAIR Fundamentally Different?
 
 Market multi-account anti-detect browsers (AdsPower, Multilogin, Hubstudio, etc.) are built on modified Chromium distributions. They tamper with navigator properties before page loading via `Page.addScriptToEvaluateOnNewDocument`. 
 
@@ -30,10 +30,10 @@ Modern risk control systems (**Cloudflare Turnstile, DataDome, Akamai, Kasada**)
 
 ```
 Market Solutions (Chromium) ──► Injects JS Prototype Overrides ──► Detected by Cloudflare / DataDome
-NexAir Native WebKit       ──► System SPI & Env Invariants    ──► Genuine Safari indistinguishable from Apple Pool
+NETAIR Native WebKit        ──► System SPI & Env Invariants    ──► Genuine Safari indistinguishable from Apple Pool
 ```
 
-### The Three Architectural Invariants of NexAir:
+### The Three Architectural Invariants of NETAIR:
 
 1. 🛡️ **Absolute Zero JS Injection Law**:
    We **never** inject `WKUserScript`, and strictly prohibit altering `window`, `navigator`, `screen`, or `WebGL` prototypes in web browsing contexts. All hardware parameters, language stacks, and time zones take effect at the macOS system level (`-AppleLanguages`, `TZ`) and WebKit private SPI runtime bridging. Target sites observe a genuine Mac running Apple WebKit Safari.
@@ -47,8 +47,8 @@ NexAir Native WebKit       ──► System SPI & Env Invariants    ──► Ge
 ## 📸 Interface Showcase
 
 <div align="center">
-  <img src="assets/screenshots/dashboard-1.3.6.png" width="94%" alt="NexAir Liquid Glass Dashboard" style="border-radius: 14px; box-shadow: 0 20px 50px rgba(0,0,0,0.25);" />
-  <p><em>NexAir Modern Manager Console · Dual-Mode Liquid Glass Dashboard with 6-Quadrant Bento Topology</em></p>
+  <img src="assets/screenshots/dashboard-1.3.6.png" width="94%" alt="NETAIR Liquid Glass Dashboard" style="border-radius: 14px; box-shadow: 0 20px 50px rgba(0,0,0,0.25);" />
+  <p><em>NETAIR Modern Manager Console · Dual-Mode Liquid Glass Dashboard with 6-Quadrant Bento Topology</em></p>
 </div>
 
 <br />
@@ -71,33 +71,33 @@ NexAir Native WebKit       ──► System SPI & Env Invariants    ──► Ge
 
 ## 🖥️ System Architecture
 
-NexAir adopts an ultra-reliable **Single Binary, Multi-Process** orchestrated architecture:
+NETAIR adopts an ultra-reliable **Single Binary, Multi-Process** orchestrated architecture:
 
 ```
                       ┌──────────────────────────────────────────────┐
-                      │          NexAir App (Single Binary)          │
+                      │          NETAir App (Single Binary)          │
                       └───────┬──────────────────────────────┬───────┘
                               │                              │
          [Default Launch]     │                              │ [run --profile <ID>]
                               ▼                              ▼
              ┌────────────────────────────────┐  ┌────────────────────────────────┐
-             │       NexAir ManagerGUI        │  │         NexAir Runner          │
+             │       NETAIR ManagerGUI         │  │         NETAir Runner          │
              │   (SwiftUI Modern Dashboard)   │  │   (Isolated AppKit Process)    │
              └────────────────────────────────┘  └───────┬────────────────┬───────┘
                                                          │                │
                                                          ▼                ▼
                                             ┌──────────────────┐  ┌──────────────┐
-                                            │   NexAirWebKit   │  │AirEngine(PID)│
+                                            │   NETAirWebKit   │  │AirEngine(PID)│
                                             │(WKWebView Engine)│  │(Local Port)  │
                                             └────────┬─────────┘  └──────────────┘
                                                      ▼
                                             ┌──────────────────┐
-                                            │NexAirObjCSupport │
+                                            │NETAirObjCSupport │
                                             │(Dynamic SPI Hook)│
                                             └────────┬─────────┘
                                                      ▼
                                             ┌──────────────────┐
-                                            │   NexAirCore     │
+                                            │   NETAirCore     │
                                             │(Sandbox & Vault) │
                                             └──────────────────┘
 ```
@@ -106,11 +106,11 @@ NexAir adopts an ultra-reliable **Single Binary, Multi-Process** orchestrated ar
 
 | Module | Location | Primary Responsibilities |
 |---|---|---|
-| **`NexAirCore`** | `Sources/NexAirCore` | Sandbox metadata, `PrivateVaultCredentialStore` (0600), 34 authentic Mac device models, `BrowsingHistoryStore`, `ProfileLock`, and `MCPServerRegistry`. |
-| **`NexAirNetwork`** | `Sources/NexAirNetwork` | Node parser (VLESS Reality, VMess, Trojan, SS2022, SOCKS5), Air Engine configuration synthesizer, port dispatch, DNS leak mitigation, and fail-closed routing. |
-| **`NexAirObjCSupport`** | `Sources/NexAirObjCSupport` | Dynamic Objective-C runtime bridge, XOR-decoded WebKit SPI symbols, signature validation, method swizzling for `NSScreen`, and C font allowlist configuration. |
-| **`NexAirWebKit`** | `Sources/NexAirWebKit` | `WKWebViewConfiguration` assembly, physical `WKWebsiteDataStore` binding, `SPIPrivacyAdapter` privacy orchestration, and display traits simulation. |
-| **`NexAir` (App)** | `Sources/NexAir` | Executive assembly: SwiftUI Manager dashboard (`ManagerGUI/`), 1:1 Safari Chrome capsule tab bar (`Browser/`), Runner process main, and IPC bridge server. |
+| **`NETAirCore`** | `Sources/NETAirCore` | Sandbox metadata, `PrivateVaultCredentialStore` (0600), 34 authentic Mac device models, `BrowsingHistoryStore`, `ProfileLock`, and `MCPServerRegistry`. |
+| **`NETAirNetwork`** | `Sources/NETAirNetwork` | Node parser (VLESS Reality, VMess, Trojan, SS2022, SOCKS5), Air Engine configuration synthesizer, port dispatch, DNS leak mitigation, and fail-closed routing. |
+| **`NETAirObjCSupport`** | `Sources/NETAirObjCSupport` | Dynamic Objective-C runtime bridge, XOR-decoded WebKit SPI symbols, signature validation, method swizzling for `NSScreen`, and C font allowlist configuration. |
+| **`NETAirWebKit`** | `Sources/NETAirWebKit` | `WKWebViewConfiguration` assembly, physical `WKWebsiteDataStore` binding, `SPIPrivacyAdapter` privacy orchestration, and display traits simulation. |
+| **`NETAir` (App)** | `Sources/NETAir` | Executive assembly: SwiftUI Manager dashboard (`ManagerGUI/`), 1:1 Safari Chrome capsule tab bar (`Browser/`), Runner process main, and IPC bridge server. |
 
 ---
 
@@ -125,7 +125,7 @@ Simulates authentic Apple Silicon (M1/M2/M3/M4) and Intel Mac device traits:
 - **Mac Pro with Pro Display XDR** (6016×3384 6K Retina, Display P3, HDR)
 
 ### 2. Auto Region & Locale Following
-Select an outbound node anywhere across the globe. NexAir measures the true exit IP and synchronizes:
+Select an outbound node anywhere across the globe. NETAIR measures the true exit IP and synchronizes:
 - **Language Stack** (`Accept-Language`, `navigator.languages`)
 - **System Time Zone** (`TZ` environment variable, WebKit Date engine)
 - **Format Locales** (Currency, numbers, calendars)
@@ -150,26 +150,26 @@ Zero external proxy tools required. Natively parses subscription URLs or raw lin
 
 ## 🤖 Built for AI Agents & MCP
 
-NexAir is built ground-up as an autonomous runtime for AI Agents (Claude Code, OpenAI Operator, Codex, Cursor, OpenCode, PI-Desktop).
+NETAIR is built ground-up as an autonomous runtime for AI Agents (Claude Code, OpenAI Operator, Codex, Cursor, OpenCode, PI-Desktop).
 
 ### Full-Ecosystem MCP Server Auto-Registration
-Launching NexAir automatically registers the **`nexair`** MCP server into all major agent runtimes:
-- **Standard Global MCP**: `~/.agents/servers/nexair.json`
-- **Project-Level MCP**: `{Workspace}/.agents/servers/nexair.json`
+Launching NETAIR automatically registers the **`netair`** MCP server into all major agent runtimes:
+- **Standard Global MCP**: `~/.agents/servers/netair.json`
+- **Project-Level MCP**: `{Workspace}/.agents/servers/netair.json`
 - **Codex Config**: Automatically injected into `~/.codex/config.toml`
 - **OpenCode Config**: Automatically merged into `~/.config/opencode/opencode.json`
 - **Claude Desktop & Cursor**: Registered in `claude_desktop_config.json` & `~/.cursor/mcp.json`
-- **CLI Symlink**: Installed to `~/.local/bin/nexair`
+- **CLI Symlink**: Installed to `~/.local/bin/netair`
 
 ```bash
-# Verify NexAir MCP stdio response
-echo '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"test","version":"1.0"}}}' | /Applications/NexAir.app/Contents/MacOS/NexAir mcp
+# Verify NETAIR MCP stdio response
+echo '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"test","version":"1.0"}}}' | /Applications/NETAir.app/Contents/MacOS/NETAir mcp
 ```
 
 ### Agent CLI Capabilities
 
 ```bash
-NX="/Applications/NexAir.app/Contents/MacOS/NexAir"
+NX="/Applications/NETAir.app/Contents/MacOS/NETAir"
 
 # 1. Query available sandbox profiles
 "$NX" agent spaces
@@ -199,16 +199,16 @@ Download the official standalone application (Universal binary for **Apple Silic
 
 | Release Asset | Architecture | Description | Download |
 |---|---|---|---|
-| **`NexAir-1.3.6-Universal.zip`** | **Universal** (`arm64` + `x86_64`) | Latest Production Build (Build 75) | [**Download Latest (GitHub Releases)**](https://github.com/XideaDev/NexAir.APP/releases/latest) |
+| **`NETAir-1.3.6-Universal.zip`** | **Universal** (`arm64` + `x86_64`) | Latest Production Build (Build 75) | [**Download Latest (GitHub Releases)**](https://github.com/XideaDev/NETAir.APP/releases/latest) |
 
 ### Installation Steps:
-1. Download and extract **`NexAir-1.3.6-Universal.zip`**;
-2. Move **`NexAir.app`** to your **`/Applications`** folder;
+1. Download and extract **`NETAir-1.3.6-Universal.zip`**;
+2. Move **`NETAir.app`** to your **`/Applications`** folder;
 3. If macOS Gatekeeper displays an unverified warning on initial launch (ad-hoc builds):
    ```bash
-   xattr -dr com.apple.quarantine "/Applications/NexAir.app"
+   xattr -dr com.apple.quarantine "/Applications/NETAir.app"
    ```
-4. Launch **NexAir** — the welcome setup and MCP registration will self-initialize.
+4. Launch **NETAIR** — the welcome setup and MCP registration will self-initialize.
 
 ---
 
@@ -223,8 +223,8 @@ Download the official standalone application (Universal binary for **Apple Silic
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/XideaDev/NexAir.git
-cd NexAir
+git clone https://github.com/XideaDev/NETAir.git
+cd NETAir
 
 # 2. Execute full automated test suite (517 unit tests, 100% pass guarantee)
 swift test
@@ -233,17 +233,17 @@ swift test
 ./scripts/build-app.sh
 
 # 4. Verify code signature & binary architectures
-codesign --verify --deep --strict "dist/NexAir.app"
-lipo -archs "dist/NexAir.app/Contents/MacOS/NexAir"
+codesign --verify --deep --strict "dist/NETAir.app"
+lipo -archs "dist/NETAir.app/Contents/MacOS/NETAir"
 
 # 5. Install to /Applications
-rm -rf /Applications/NexAir.app && cp -R "dist/NexAir.app" /Applications/
+rm -rf /Applications/NETAir.app && cp -R "dist/NETAir.app" /Applications/
 ```
 
 ### Standard Automated Release (SOP)
 ```bash
 # Executes atomic build, dual Ed25519 signing, XML verification & GitHub release deployment
-./scripts/release.sh 1.3.6 "NexAir 1.3.6" "Production Release Notes"
+./scripts/release.sh 1.3.6 "NETAIR 1.3.6" "Production Release Notes"
 ```
 
 ---
@@ -267,6 +267,6 @@ rm -rf /Applications/NexAir.app && cp -R "dist/NexAir.app" /Applications/
 
 ## 📄 License & Acknowledgments
 
-- **NexAir** is released under the **[MIT License](LICENSE)**.
+- **NETAIR** is proprietary software. All rights reserved.
 - **Air Engine**: Built upon an unmodified helper core of **[SagerNet/sing-box](https://github.com/SagerNet/sing-box)** (GPL-3.0-or-later) for low-level proxy routing. Full license notices are bundled inside `Contents/Resources/ThirdParty/sing-box/`.
 - Designed and engineered with passion by the **XideaDev** Core Team.
