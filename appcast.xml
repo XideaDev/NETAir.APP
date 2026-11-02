@@ -1,30 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:nexair="https://nexair.app/schema/ticket">
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:netair="https://netair.app/schema/ticket" xmlns:nexair="https://nexair.app/schema/ticket">
   <channel>
-    <title>NexAir 版本更新频道</title>
-    <link>https://github.com/XideaDev/NexAir.APP</link>
-    <description>NexAir 自动更新推送流 (托管于 GitHub Releases)</description>
+    <title>NET Air 版本更新频道</title>
+    <link>https://github.com/XideaDev/NETAir.APP</link>
+    <description>NET Air 自动更新推送流 (托管于 GitHub Releases)</description>
     <language>zh-CN</language>
+
+    <!-- v1.3.7 版本项 -->
+    <item>
+      <title>NET Air 1.3.7</title>
+      <pubDate>Mon, 02 Nov 2026 22:17:56 +0800</pubDate>
+      <sparkle:version>84</sparkle:version>
+      <sparkle:shortVersionString>1.3.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <netair:securityTicket
+        dohServer="https://8.8.8.8/dns-query"
+        issuedAt="1793629076"
+        expiresAt="1825165076"
+        signature="UaYode5w3tDCkWKFTd+7HxjH4XVDEAhfYq90VK0KWBAAuly9XiyBb/zCKzWP+aYcwIaRPuDYsO5LutDNNr5uDw==" />
+      <nexair:securityTicket
+        dohServer="https://8.8.8.8/dns-query"
+        issuedAt="1793629076"
+        expiresAt="1825165076"
+        signature="UaYode5w3tDCkWKFTd+7HxjH4XVDEAhfYq90VK0KWBAAuly9XiyBb/zCKzWP+aYcwIaRPuDYsO5LutDNNr5uDw==" />
+      <description><![CDATA[
+        <h3>NET Air 1.3.7</h3>
+        <p>重塑升级为 NET Air 原生指纹浏览器，支持多沙盒隔离与全生态 MCP 桥接</p>
+      ]]></description>
+      
+      <enclosure
+        url="https://github.com/XideaDev/NexAir.APP/releases/download/v1.3.7/NETAir-1.3.7-Universal.zip"
+        length="53007026"
+        type="application/octet-stream"
+        sparkle:edSignature="LGX0GBml18BZD9chrZlaP6l+eT2OYFFd195EzPVPfUcVnuY7HLoRFF0dPLoCvwg41cvy5Yixxf5KMCqiE+SrAA==" />
+    </item>
 
     <!-- v1.3.6 版本项 -->
     <item>
-      <title>NexAir 1.3.6</title>
+      <title>NET Air 1.3.6</title>
       <pubDate>Mon, 02 Nov 2026 14:48:22 +0800</pubDate>
       <sparkle:version>75</sparkle:version>
       <sparkle:shortVersionString>1.3.6</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <nexair:securityTicket
+      <netair:securityTicket
         dohServer="https://8.8.8.8/dns-query"
         issuedAt="1793602101"
         expiresAt="1825138101"
         signature="ARPPigs2lMSGXOXPERLkjxJSRdNJifoz4dYpWfftZo7mDjpv5Bpcr4KoU2Ej2NYCqWljQ/mHxqYqT0rAKQmfDg==" />
       <description><![CDATA[
-        <h3>NexAir 1.3.6</h3>
+        <h3>NET Air 1.3.6</h3>
         <p>支持全生态 MCP 自动注册（Codex、OpenCode、.agents 等），优化更新状态指示灯与高保真弹窗。</p>
       ]]></description>
       
       <enclosure
-        url="https://github.com/XideaDev/NexAir.APP/releases/download/v1.3.6/NexAir-1.3.6-Universal.zip"
+        url="https://github.com/XideaDev/NETAir.APP/releases/download/v1.3.6/NETAir-1.3.6-Universal.zip"
         length="52990015"
         type="application/octet-stream"
         sparkle:edSignature="w9paJlRwmi5C+UvoixW/gcLv+qV4fYxzLekxWWTS75EK0980PfAc5PyH0yHC6S9AfPVnjN7xR+Z6GpPnF5BFBA==" />
