@@ -6,6 +6,30 @@
     <description>NexAir 自动更新推送流 (托管于 GitHub Releases)</description>
     <language>zh-CN</language>
 
+    <!-- v1.3.6 版本项 -->
+    <item>
+      <title>NexAir 1.3.6</title>
+      <pubDate>Mon, 02 Nov 2026 14:48:22 +0800</pubDate>
+      <sparkle:version>75</sparkle:version>
+      <sparkle:shortVersionString>1.3.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <nexair:securityTicket
+        dohServer="https://8.8.8.8/dns-query"
+        issuedAt="1793602101"
+        expiresAt="1825138101"
+        signature="ARPPigs2lMSGXOXPERLkjxJSRdNJifoz4dYpWfftZo7mDjpv5Bpcr4KoU2Ej2NYCqWljQ/mHxqYqT0rAKQmfDg==" />
+      <description><![CDATA[
+        <h3>NexAir 1.3.6</h3>
+        <p>支持全生态 MCP 自动注册（Codex、OpenCode、.agents 等），优化更新状态指示灯与高保真弹窗。</p>
+      ]]></description>
+      
+      <enclosure
+        url="https://github.com/XideaDev/NexAir.APP/releases/download/v1.3.6/NexAir-1.3.6-Universal.zip"
+        length="16924836"
+        type="application/octet-stream"
+        sparkle:edSignature="DBD4dBMaSlAKd+fFqQgXrLq/gbszZMao64XIDcKGNz6wQiDXAXr45qPCUvYItaDqwoImSBFS1d5fTyvTUkWeDg==" />
+    </item>
+
     <!-- v1.3.5 版本项 -->
     <item>
       <title>NexAir 1.3.5</title>
