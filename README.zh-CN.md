@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo/image13.png" width="108" height="108" alt="NexAir Icon" style="border-radius: 24px; box-shadow: 0 18px 40px -10px rgba(15,111,212,0.45);" />
+  <img src="assets/logo/image13.png" width="108" height="108" alt="NexAir Icon" style="border-radius: 24px; box-shadow: 0 18px 40px -10px rgba(15,111,212,0.45);" />
   <h1 style="margin-top: 16px; font-size: 34px; font-weight: 800; letter-spacing: -0.02em;">NexAir</h1>
   <p style="font-size: 16px; font-weight: 500; color: #6e6e73;">
     <strong>专为 macOS 打造的高保真多沙盒指纹浏览器与 AI Agent 原生运行基座</strong>
@@ -47,7 +47,7 @@ NexAir 原生 WebKit 方案 ──► 系统级 SPI 与环境变量硬化 ──
 ## 📸 界面画廊与视觉质感 (Showcase)
 
 <div align="center">
-  <img src="docs/assets/hero-showcase.png" width="94%" alt="NexAir Liquid Glass 仪表盘" style="border-radius: 14px; box-shadow: 0 20px 50px rgba(0,0,0,0.25);" />
+  <img src="assets/screenshots/dashboard-1.3.6.png" width="94%" alt="NexAir Liquid Glass 仪表盘" style="border-radius: 14px; box-shadow: 0 20px 50px rgba(0,0,0,0.25);" />
   <p><em>NexAir 现代化管理控制台 · 双模态 Liquid Glass（流体玻璃）仪表盘与 6 象限 Bento 拓扑</em></p>
 </div>
 
@@ -57,13 +57,12 @@ NexAir 原生 WebKit 方案 ──► 系统级 SPI 与环境变量硬化 ──
   <table width="100%" style="border: none;">
     <tr>
       <td width="50%" align="center" style="border: none;">
-        <img src="docs/assets/browser-showcase.png" width="100%" alt="1:1 Safari 胶囊标签栏" style="border-radius: 10px;" />
+        <img src="assets/screenshots/browser-multi-1.3.6.png" width="100%" alt="1:1 Safari 胶囊标签栏" style="border-radius: 10px;" />
         <br /><strong>1:1 Safari Chrome 胶囊标签栏与纯矢量国旗</strong>
       </td>
       <td width="50%" align="center" style="border: none;">
-        <img src="docs/assets/check-zh.png" width="100%" alt="硬件与隐私体检诊断" style="border-radius: 10px;" />
-        <br /><strong>硬件拟态与 WebKit SPI 隐私能力自检</strong>
-      </td>
+        <img src="assets/screenshots/browser-single-1.3.6.png" width="100%" alt="Safari 原生单标签页模式" style="border-radius: 10px;" />
+        <br /><strong>单标签自动紧凑收拢模式与纯矢量国旗胶囊</strong>
     </tr>
   </table>
 </div>
