@@ -30,7 +30,8 @@
       <enclosure
         url="https://github.com/XideaDev/NexAir.APP/releases/download/v1.3.5/NexAir-1.3.5-Universal.zip"
         length="16917022"
-        type="application/octet-stream" />
+        type="application/octet-stream"
+        sparkle:edSignature="pSE2miVu2inQ4qPb6W95lLu4Kw1JVh+Y1UQPS6O6lv2IQMW58wajpIMOvJniUgJyTCJFgJeGAYqbrMVuk4uOCQ==" />
     </item>
 
     <!-- v1.3.4 版本项 -->
@@ -58,7 +59,8 @@
       <enclosure
         url="https://github.com/XideaDev/NexAir.APP/releases/download/v1.3.4/NexAir-1.3.4-Universal.zip"
         length="16893809"
-        type="application/octet-stream" />
+        type="application/octet-stream"
+        sparkle:edSignature="LMGc9AhojB2xlrLOuuIjV/jd94Kox1oh4NiZdF44nhOtxzMRRYqr3I7SOHdYNmbqgZvqPklWls1E9veG/PU+CA==" />
     </item>
 
     <!-- v1.3.3 版本项 -->
