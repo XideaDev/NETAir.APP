@@ -6,6 +6,34 @@
     <description>NexAir 自动更新推送流 (托管于 GitHub Releases)</description>
     <language>zh-CN</language>
 
+    <!-- v1.3.4 版本项 -->
+    <item>
+      <title>NexAir 1.3.4</title>
+      <pubDate>Mon, 02 Nov 2026 12:35:00 +0800</pubDate>
+      <sparkle:version>68</sparkle:version>
+      <sparkle:shortVersionString>1.3.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <nexair:securityTicket
+        dohServer="https://8.8.8.8/dns-query"
+        issuedAt="1793594057"
+        expiresAt="1825130057"
+        signature="XJ87oBZJxOOmIlJdYBW9qTzBidJjQkvbz0ZFsmBrNOTay0Z2ygZgBAZLHTTWUWQhbD5g2AIe6haVppYSDkuSDw==" />
+      <description><![CDATA[
+        <h3>NexAir 1.3.4 版本更新 · 安全加固与可靠性跃升</h3>
+        <ul>
+          <li><strong>核心密钥体系硬化</strong>：客户端移除所有硬编码私钥，全链路接入独立离线签名工具，密码学防伪升级；</li>
+          <li><strong>单调时钟与防时间回退</strong>：增加沙盒凭据单调时钟校验，严密拦截系统时钟篡改，优化 30 天宽限期提醒；</li>
+          <li><strong>DNS 旁路防泄露与死锁增强</strong>：增加 53 端口 UDP/TCP 强制劫持与 block 路由兜底，彻底杜绝裸 IP 直连泄漏；</li>
+          <li><strong>更新镜像高可用容灾</strong>：新增多镜像自动轮询回退，抗网络阻断与连接超时，保障静默自检顺畅。</li>
+        </ul>
+      ]]></description>
+      
+      <enclosure
+        url="https://github.com/XideaDev/NexAir.APP/releases/download/v1.3.4/NexAir-1.3.4-Universal.zip"
+        length="16893809"
+        type="application/octet-stream" />
+    </item>
+
     <!-- v1.3.3 版本项 -->
     <item>
       <title>NexAir 1.3.3</title>
