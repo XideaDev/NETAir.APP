@@ -6,6 +6,33 @@
     <description>NexAir 自动更新推送流 (托管于 GitHub Releases)</description>
     <language>zh-CN</language>
 
+    <!-- v1.3.5 版本项 -->
+    <item>
+      <title>NexAir 1.3.5</title>
+      <pubDate>Mon, 02 Nov 2026 14:20:00 +0800</pubDate>
+      <sparkle:version>69</sparkle:version>
+      <sparkle:shortVersionString>1.3.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <nexair:securityTicket
+        dohServer="https://8.8.8.8/dns-query"
+        issuedAt="1793600296"
+        expiresAt="1825136296"
+        signature="vZ+nI/Vp40wzhBN2yJURXi7UonIGi+FBKotKp2QUVePitly1VqhskPkie97HDfDPnG0qKmcS2XqMcGVsV2fpBQ==" />
+      <description><![CDATA[
+        <h3>NexAir 1.3.5 版本更新 · 现代化交互与极简视觉排版</h3>
+        <ul>
+          <li><strong>视觉指示纯粹化</strong>：移除主界面与状态栏繁杂长文本提示，全面采用极简发光状态指示灯（翡翠绿/琥珀金/晶蓝）；</li>
+          <li><strong>现代化更新弹窗</strong>：彻底剔除“跳过版本”与冗余复选框，遵循 macOS 26+ Liquid Glass 标准对称排版；</li>
+          <li><strong>全链路极速下载与就绪感知</strong>：优化下载提取生命周期，完成下载后立即切换为高亮晶蓝就绪光环。</li>
+        </ul>
+      ]]></description>
+      
+      <enclosure
+        url="https://github.com/XideaDev/NexAir.APP/releases/download/v1.3.5/NexAir-1.3.5-Universal.zip"
+        length="16917022"
+        type="application/octet-stream" />
+    </item>
+
     <!-- v1.3.4 版本项 -->
     <item>
       <title>NexAir 1.3.4</title>
