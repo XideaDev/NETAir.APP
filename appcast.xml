@@ -25,9 +25,9 @@
       
       <enclosure
         url="https://github.com/XideaDev/NexAir.APP/releases/download/v1.3.6/NexAir-1.3.6-Universal.zip"
-        length="16924836"
+        length="52990015"
         type="application/octet-stream"
-        sparkle:edSignature="DBD4dBMaSlAKd+fFqQgXrLq/gbszZMao64XIDcKGNz6wQiDXAXr45qPCUvYItaDqwoImSBFS1d5fTyvTUkWeDg==" />
+        sparkle:edSignature="w9paJlRwmi5C+UvoixW/gcLv+qV4fYxzLekxWWTS75EK0980PfAc5PyH0yHC6S9AfPVnjN7xR+Z6GpPnF5BFBA==" />
     </item>
 
   </channel>
