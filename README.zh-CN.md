@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo/image13.png" width="108" height="108" alt="NexAir Icon" style="border-radius: 24px; box-shadow: 0 18px 40px -10px rgba(15,111,212,0.45);" />
+  <img src="logo/image13.png" width="108" height="108" alt="NexAir Icon" style="border-radius: 24px; box-shadow: 0 18px 40px -10px rgba(15,111,212,0.45);" />
   <h1 style="margin-top: 16px; font-size: 34px; font-weight: 800; letter-spacing: -0.02em;">NexAir</h1>
   <p style="font-size: 16px; font-weight: 500; color: #6e6e73;">
     <strong>专为 macOS 打造的高保真多沙盒指纹浏览器与 AI Agent 原生运行基座</strong>
@@ -38,17 +38,17 @@ NexAir 原生 WebKit 方案 ──► 系统级 SPI 与环境变量硬化 ──
 1. 🛡️ **绝对零 JS 注入（Zero JS Injection Law）**：
    **严禁**向常规浏览页面注入任何 `WKUserScript`，严禁在页面全局环境中重写 `window`、`navigator`、`screen`、`WebGL` 原型链！所有环境特征（语言、时区、屏幕几何尺寸）均通过 macOS 系统级环境变量（`-AppleLanguages`、`TZ`）与 WebKit 运行时底层私有 SPI 动态安全桥接生效。目标网站看到的，是一台真实无异的 Mac 原生 Safari 浏览器。
 2. 🔒 **网络严格 Fail-Closed（断网绝对阻断）**：
-   每个沙盒环境独立分配专属 `sing-box` 进程或独立 SOCKS5 代理。代理连接中断或解析失败时，网页立即终止加载并报错，**绝对禁止自动降级或回退到本机直连网络**，彻底杜绝真实物理 IP 泄露；增加 53 端口 UDP/TCP 强制劫持与 `block` 兜底路由，严防 DNS 旁路逃逸。
+   每个沙盒环境独立分配专属 `Air Engine` 进程或独立 SOCKS5 代理。代理连接中断或解析失败时，网页立即终止加载并报错，**绝对禁止自动降级或回退到本机直连网络**，彻底杜绝真实物理 IP 泄露；增加 53 端口 UDP/TCP 强制劫持与 `block` 兜底路由，严防 DNS 旁路逃逸。
 3. 🔐 **沙盒保险箱与零明文落盘（Private Vault Storage）**：
    代理与节点凭据只落盘于 POSIX `0600` 权限独立沙盒加密保险箱（`credentials.vault`）与 macOS 系统钥匙串。传递给子进程时仅通过标准输入（stdin 管道，配置 `F_SETNOSIGPIPE`）。明文密码与密钥绝不记录于日志或命令行参数中。
 
 ---
 
-## 📸 真实产品界面画廊 (v1.3.6 最新实拍)
+## 📸 界面画廊与视觉质感 (Showcase)
 
 <div align="center">
-  <img src="assets/screenshots/dashboard-1.3.6.png" width="94%" alt="NexAir v1.3.6 真实仪表盘" style="border-radius: 14px; box-shadow: 0 20px 50px rgba(0,0,0,0.25);" />
-  <p><em>NexAir v1.3.6 现代化控制台 · 纯色彩状态灯表达、零文字杂音、Liquid Glass 流体拓扑</em></p>
+  <img src="docs/assets/hero-showcase.png" width="94%" alt="NexAir Liquid Glass 仪表盘" style="border-radius: 14px; box-shadow: 0 20px 50px rgba(0,0,0,0.25);" />
+  <p><em>NexAir 现代化管理控制台 · 双模态 Liquid Glass（流体玻璃）仪表盘与 6 象限 Bento 拓扑</em></p>
 </div>
 
 <br />
@@ -57,12 +57,12 @@ NexAir 原生 WebKit 方案 ──► 系统级 SPI 与环境变量硬化 ──
   <table width="100%" style="border: none;">
     <tr>
       <td width="50%" align="center" style="border: none;">
-        <img src="assets/screenshots/browser-multi-1.3.6.png" width="100%" alt="1:1 Safari 胶囊标签栏" style="border-radius: 10px;" />
-        <br /><strong>1:1 Safari Chrome 胶囊标签栏 (多标签平铺自适应)</strong>
+        <img src="docs/assets/browser-showcase.png" width="100%" alt="1:1 Safari 胶囊标签栏" style="border-radius: 10px;" />
+        <br /><strong>1:1 Safari Chrome 胶囊标签栏与纯矢量国旗</strong>
       </td>
       <td width="50%" align="center" style="border: none;">
-        <img src="assets/screenshots/browser-single-1.3.6.png" width="100%" alt="Safari 原生单标签页模式" style="border-radius: 10px;" />
-        <br /><strong>单标签自动紧凑收拢模式与纯矢量国旗胶囊</strong>
+        <img src="docs/assets/check-zh.png" width="100%" alt="硬件与隐私体检诊断" style="border-radius: 10px;" />
+        <br /><strong>硬件拟态与 WebKit SPI 隐私能力自检</strong>
       </td>
     </tr>
   </table>
@@ -88,7 +88,7 @@ NexAir 采用健壮的 **单二进制、多进程协同（Single Binary, Multi-P
                                                          │                │
                                                          ▼                ▼
                                             ┌──────────────────┐  ┌──────────────┐
-                                            │   NexAirWebKit   │  │sing-box 进程 │
+                                            │   NexAirWebKit   │  │AirEngine 进程│
                                             │ (WKWebView 编排) │  │(专属本地端口)│
                                             └────────┬─────────┘  └──────────────┘
                                                      ▼
@@ -108,7 +108,7 @@ NexAir 采用健壮的 **单二进制、多进程协同（Single Binary, Multi-P
 | 模块名称 | 源码目录 | 核心职责与技术边界 |
 |---|---|---|
 | **`NexAirCore`** | `Sources/NexAirCore` | **数据模型与沙盒凭据**：纯依赖 Foundation 与 Security。定义 `Profile`、`ProfileGroup`、34 款 Mac 设备机型库、`BrowsingHistoryStore` 历史/会话、`ProfileLock` 排他锁及 `MCPServerRegistry`。 |
-| **`NexAirNetwork`** | `Sources/NexAirNetwork` | **网络与代理生命周期**：负责节点解析（SS, VLESS, VMess, Trojan, SOCKS）、`sing-box` 动态配置生成（防 DNS 泄露）、专属子进程管理、端口调度与 GeoIP 定位。 |
+| **`NexAirNetwork`** | `Sources/NexAirNetwork` | **网络与代理生命周期**：负责节点解析（SS, VLESS, VMess, Trojan, SOCKS）、`Air Engine` 动态配置生成（防 DNS 泄露）、专属子进程管理、端口调度与 GeoIP 定位。 |
 | **`NexAirObjCSupport`** | `Sources/NexAirObjCSupport` | **原生引擎运行时桥接**：纯 Objective-C 底层实现。负责 XOR 混淆符号解码、dlsym 动态解析、签名校验、Method Swizzling 动态替换 `NSScreen` 尺寸/色域、C 导出符号配置系统字体白名单。 |
 | **`NexAirWebKit`** | `Sources/NexAirWebKit` | **WebKit 编排与行为装配**：组装 `WKWebViewConfiguration`，绑定物理隔离 `WKWebsiteDataStore`、网络代理配置、`SPIPrivacyAdapter` 隐私能力适配与屏幕几何模拟。 |
 | **`NexAir`** (App) | `Sources/NexAir` | **可执行应用总装**：SwiftUI 管理控制台（`ManagerGUI/`）、AppKit 原生 Safari 式多窗口/多标签页（`Browser/`）、Runner 进程启动入口与面向 AI Agent 的 IPC 服务。 |
@@ -215,7 +215,7 @@ NX="/Applications/NexAir.app/Contents/MacOS/NexAir"
 ### 编译环境要求
 - macOS 14.0+ 与 **Xcode 15+**（或已安装 Command Line Tools）
 - Swift 5.10+ 工具链
-- Go 1.22+（仅在重新编译自带的 `sing-box` 内核时需要）
+- Go 1.22+（仅在重新编译自带的 `Air Engine` 核心内核时需要）
 
 ### 本地构建指南
 
@@ -266,5 +266,5 @@ rm -rf /Applications/NexAir.app && cp -R "dist/NexAir.app" /Applications/
 ## 📄 开源许可证与鸣谢 (License)
 
 - **NexAir** 遵循 **[MIT 开源许可证](LICENSE)** 自由使用与二次分发。
-- **Air Engine**: 内置了未修改的 **[SagerNet/sing-box](https://github.com/SagerNet/sing-box)** 二进制组件（遵循 GPL-3.0-or-later 许可协议）。完整许可与源码引证位于 `Contents/Resources/ThirdParty/sing-box/`。
+- **Air Engine**: 基于未修改的 **[SagerNet/sing-box](https://github.com/SagerNet/sing-box)** 核心组件（遵循 GPL-3.0-or-later 协议）提供底层协议路由支持。完整许可与源码引证位于 `Contents/Resources/ThirdParty/sing-box/`。
 - 由 **XideaDev** 核心工程团队倾力设计与研发维护。

@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo/image13.png" width="108" height="108" alt="NexAir Icon" style="border-radius: 24px; box-shadow: 0 18px 40px -10px rgba(15,111,212,0.45);" />
+  <img src="logo/image13.png" width="108" height="108" alt="NexAir Icon" style="border-radius: 24px; box-shadow: 0 18px 40px -10px rgba(15,111,212,0.45);" />
   <h1 style="margin-top: 16px; font-size: 34px; font-weight: 800; letter-spacing: -0.02em;">NexAir</h1>
   <p style="font-size: 16px; font-weight: 500; color: #6e6e73;">
     <strong>The Native macOS Multi-Sandbox Fingerprint Browser & AI Agent Runtime Base</strong>
@@ -38,17 +38,17 @@ NexAir Native WebKit       ──► System SPI & Env Invariants    ──► Ge
 1. 🛡️ **Absolute Zero JS Injection Law**:
    We **never** inject `WKUserScript`, and strictly prohibit altering `window`, `navigator`, `screen`, or `WebGL` prototypes in web browsing contexts. All hardware parameters, language stacks, and time zones take effect at the macOS system level (`-AppleLanguages`, `TZ`) and WebKit private SPI runtime bridging. Target sites observe a genuine Mac running Apple WebKit Safari.
 2. 🔒 **Fail-Closed Network Isolation**:
-   Each browser profile operates its own dedicated `sing-box` kernel or isolated SOCKS5 outbound. If an outbound drops or DNS stalls, traffic terminates immediately with a localized deadlock. **Zero fallback to local direct connections** — preventing IP exposure and DNS leakage.
+   Each browser profile operates its own dedicated `Air Engine` process or isolated SOCKS5 outbound. If an outbound drops or DNS stalls, traffic terminates immediately with a localized deadlock. **Zero fallback to local direct connections** — preventing IP exposure and DNS leakage.
 3. 🔐 **Zero-Plaintext Credential Vault**:
    Credentials, keys, and session identities are stored strictly in POSIX `0600` sandboxed vaults (`credentials.vault`) and macOS Keychain. Configs are transferred to child processes exclusively through `stdin` memory pipes (`F_SETNOSIGPIPE`).
 
 ---
 
-## 📸 Real Product Interface Showcase (v1.3.6)
+## 📸 Interface Showcase
 
 <div align="center">
-  <img src="assets/screenshots/dashboard-1.3.6.png" width="94%" alt="NexAir v1.3.6 Dashboard" style="border-radius: 14px; box-shadow: 0 20px 50px rgba(0,0,0,0.25);" />
-  <p><em>NexAir v1.3.6 Management Console · Pure Status Light Feedback, Zero Text Clutter, Liquid Glass Topology</em></p>
+  <img src="docs/assets/hero-showcase.png" width="94%" alt="NexAir Liquid Glass Dashboard" style="border-radius: 14px; box-shadow: 0 20px 50px rgba(0,0,0,0.25);" />
+  <p><em>NexAir Modern Manager Console · Dual-Mode Liquid Glass Dashboard with 6-Quadrant Bento Topology</em></p>
 </div>
 
 <br />
@@ -57,12 +57,12 @@ NexAir Native WebKit       ──► System SPI & Env Invariants    ──► Ge
   <table width="100%" style="border: none;">
     <tr>
       <td width="50%" align="center" style="border: none;">
-        <img src="assets/screenshots/browser-multi-1.3.6.png" width="100%" alt="1:1 Safari Chrome Capsule Bar" style="border-radius: 10px;" />
-        <br /><strong>1:1 Safari Chrome Capsule Tab Bar (Multi-Tab)</strong>
+        <img src="docs/assets/browser-showcase.png" width="100%" alt="1:1 Safari Chrome Capsule Bar" style="border-radius: 10px;" />
+        <br /><strong>1:1 Safari Chrome Capsule Tab Bar</strong>
       </td>
       <td width="50%" align="center" style="border: none;">
-        <img src="assets/screenshots/browser-single-1.3.6.png" width="100%" alt="Safari Native Single Tab Bar" style="border-radius: 10px;" />
-        <br /><strong>Single-Tab Auto-Compact Mode with Vector Flag</strong>
+        <img src="docs/assets/check-zh.png" width="100%" alt="System Health Diagnostics" style="border-radius: 10px;" />
+        <br /><strong>Hardware & SPI Privacy Diagnostics</strong>
       </td>
     </tr>
   </table>
@@ -88,7 +88,7 @@ NexAir adopts an ultra-reliable **Single Binary, Multi-Process** orchestrated ar
                                                          │                │
                                                          ▼                ▼
                                             ┌──────────────────┐  ┌──────────────┐
-                                            │   NexAirWebKit   │  │sing-box (PID)│
+                                            │   NexAirWebKit   │  │AirEngine(PID)│
                                             │(WKWebView Engine)│  │(Local Port)  │
                                             └────────┬─────────┘  └──────────────┘
                                                      ▼
@@ -108,7 +108,7 @@ NexAir adopts an ultra-reliable **Single Binary, Multi-Process** orchestrated ar
 | Module | Location | Primary Responsibilities |
 |---|---|---|
 | **`NexAirCore`** | `Sources/NexAirCore` | Sandbox metadata, `PrivateVaultCredentialStore` (0600), 34 authentic Mac device models, `BrowsingHistoryStore`, `ProfileLock`, and `MCPServerRegistry`. |
-| **`NexAirNetwork`** | `Sources/NexAirNetwork` | Node parser (VLESS Reality, VMess, Trojan, SS2022, SOCKS5), sing-box configuration synthesizer, port dispatch, DNS leak mitigation, and fail-closed routing. |
+| **`NexAirNetwork`** | `Sources/NexAirNetwork` | Node parser (VLESS Reality, VMess, Trojan, SS2022, SOCKS5), Air Engine configuration synthesizer, port dispatch, DNS leak mitigation, and fail-closed routing. |
 | **`NexAirObjCSupport`** | `Sources/NexAirObjCSupport` | Dynamic Objective-C runtime bridge, XOR-decoded WebKit SPI symbols, signature validation, method swizzling for `NSScreen`, and C font allowlist configuration. |
 | **`NexAirWebKit`** | `Sources/NexAirWebKit` | `WKWebViewConfiguration` assembly, physical `WKWebsiteDataStore` binding, `SPIPrivacyAdapter` privacy orchestration, and display traits simulation. |
 | **`NexAir` (App)** | `Sources/NexAir` | Executive assembly: SwiftUI Manager dashboard (`ManagerGUI/`), 1:1 Safari Chrome capsule tab bar (`Browser/`), Runner process main, and IPC bridge server. |
@@ -218,7 +218,7 @@ Download the official standalone application (Universal binary for **Apple Silic
 ### Prerequisites
 - macOS 14.0+ with **Xcode 15+** (or Command Line Tools)
 - Swift 5.10+ Toolchain
-- Go 1.22+ (only if compiling custom `sing-box` helpers)
+- Go 1.22+ (only if compiling custom `Air Engine` core helpers)
 
 ### Build Instructions
 
@@ -269,5 +269,5 @@ rm -rf /Applications/NexAir.app && cp -R "dist/NexAir.app" /Applications/
 ## 📄 License & Acknowledgments
 
 - **NexAir** is released under the **[MIT License](LICENSE)**.
-- **Air Engine**: Bundles an unmodified helper build of **[SagerNet/sing-box](https://github.com/SagerNet/sing-box)** (GPL-3.0-or-later) for proxy routing. Full license notices are bundled inside `Contents/Resources/ThirdParty/sing-box/`.
+- **Air Engine**: Built upon an unmodified helper core of **[SagerNet/sing-box](https://github.com/SagerNet/sing-box)** (GPL-3.0-or-later) for low-level proxy routing. Full license notices are bundled inside `Contents/Resources/ThirdParty/sing-box/`.
 - Designed and engineered with passion by the **XideaDev** Core Team.
