@@ -8,7 +8,7 @@
     Engineered exclusively for macOS 14+ Sonoma & macOS 15+ Sequoia · Built on Genuine Apple WebKit · Absolute Zero JavaScript Injection · Fail-Closed Network Isolation · Designed for E-Commerce, Operations & AI Automation
   </p>
   <p>
-    <a href="https://github.com/XideaDev/NETAir.APP/releases/latest"><img src="https://img.shields.io/badge/Release-v1.3.8-0F6FD4?style=for-the-badge&logo=apple" alt="Release v1.3.8" /></a>
+    <a href="https://github.com/XideaDev/NETAir.APP/releases/latest"><img src="https://img.shields.io/badge/Release-v1.3.9-0F6FD4?style=for-the-badge&logo=apple" alt="Release v1.3.9" /></a>
     <img src="https://img.shields.io/badge/macOS-14.0%2B-1d1d1f?style=for-the-badge&logo=apple" alt="macOS 14.0+" />
     <img src="https://img.shields.io/badge/Architecture-Universal%20(arm64%20%2B%20x86__64)-34C759?style=for-the-badge" alt="Universal" />
     <img src="https://img.shields.io/badge/Engine-Native%20WebKit-007AFF?style=for-the-badge&logo=safari" alt="Native WebKit" />
@@ -176,11 +176,11 @@ NETAIR is distributed as a Universal application supporting both **Apple Silicon
 
 | Release Asset | Architecture | Description | Download |
 |---|---|---|---|
-| **`NETAir-1.3.8-Universal.zip`** | **Universal** (`arm64` + `x86_64`) | Latest Production Build (Build 91) | [**Download Latest (GitHub Releases)**](https://github.com/XideaDev/NETAir.APP/releases/latest) |
+| **`NETAir-1.3.9-Universal.zip`** | **Universal** (`arm64` + `x86_64`) | Latest Production Build (Build 95) | [**Download Latest (GitHub Releases)**](https://github.com/XideaDev/NETAir.APP/releases/latest) |
 
 ### Installation Steps
 
-1. Download and extract **`NETAir-1.3.8-Universal.zip`**;
+1. Download and extract **`NETAir-1.3.9-Universal.zip`**;
 2. Drag **`NETAir.app`** into your **`/Applications`** folder;
 3. If macOS Gatekeeper displays an unverified developer warning upon initial launch:
    ```bash

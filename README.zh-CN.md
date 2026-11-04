@@ -8,7 +8,7 @@
     为跨境电商、多账号运营、广告投放与 AI 自动化团队打造 · 原生 macOS 14+ Sonoma 与 15+ Sequoia 架构 · Apple WebKit 真实内核 · 零 JS 注入 · Fail-Closed 断网防护
   </p>
   <p>
-    <a href="https://github.com/XideaDev/NETAir.APP/releases/latest"><img src="https://img.shields.io/badge/Release-v1.3.8-0F6FD4?style=for-the-badge&logo=apple" alt="Release v1.3.8" /></a>
+    <a href="https://github.com/XideaDev/NETAir.APP/releases/latest"><img src="https://img.shields.io/badge/Release-v1.3.9-0F6FD4?style=for-the-badge&logo=apple" alt="Release v1.3.9" /></a>
     <img src="https://img.shields.io/badge/macOS-14.0%2B-1d1d1f?style=for-the-badge&logo=apple" alt="macOS 14.0+" />
     <img src="https://img.shields.io/badge/Architecture-Universal%20(arm64%20%2B%20x86__64)-34C759?style=for-the-badge" alt="Universal" />
     <img src="https://img.shields.io/badge/Engine-Native%20WebKit-007AFF?style=for-the-badge&logo=safari" alt="Native WebKit" />
@@ -176,11 +176,11 @@ NX="/Applications/NETAir.app/Contents/MacOS/NETAir"
 
 | 安装包名称 | 适配架构 | 构建说明 | 下载地址 |
 |---|---|---|---|
-| **`NETAir-1.3.8-Universal.zip`** | **Universal** (`arm64` + `x86_64`) | 最新正式版本 (Build 91) | [**立即下载最新版 (GitHub Releases)**](https://github.com/XideaDev/NETAir.APP/releases/latest) |
+| **`NETAir-1.3.9-Universal.zip`** | **Universal** (`arm64` + `x86_64`) | 最新正式版本 (Build 95) | [**立即下载最新版 (GitHub Releases)**](https://github.com/XideaDev/NETAir.APP/releases/latest) |
 
 ### 安装与首次启动指引
 
-1. 下载并解压 **`NETAir-1.3.8-Universal.zip`**；
+1. 下载并解压 **`NETAir-1.3.9-Universal.zip`**；
 2. 将 **`NETAir.app`** 拖移至你的 **`/Applications`**（应用程序）目录；
 3. 若首次打开时系统 Gatekeeper 弹出未验证提示，在终端执行一次解禁即可：
    ```bash

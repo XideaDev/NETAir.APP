@@ -6,6 +6,30 @@
     <description>NETAIR 自动更新推送流 (托管于 GitHub Releases)</description>
     <language>zh-CN</language>
 
+    <!-- v1.3.9 版本项 -->
+    <item>
+      <title>NETAIR 1.3.9</title>
+      <pubDate>Wed, 04 Nov 2026 21:08:20 +0800</pubDate>
+      <sparkle:version>95</sparkle:version>
+      <sparkle:shortVersionString>1.3.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <netair:securityTicket
+        dohServer="https://8.8.8.8/dns-query"
+        issuedAt="1793797700"
+        expiresAt="1825333700"
+        signature="2CV6xNRPltbjo8hwqssO5Pn+lwVf8Pp/VJbgdlNDIu7sY+voMUn9TjTgWjJlgl9EuO1z4hV5j6t6Y7ctexiKBQ==" />
+      <description><![CDATA[
+        <h3>NETAIR 1.3.9</h3>
+        <p>AI 助手接入重构与三栏布局体验升级：三栏 Bento 布局排版；「已接入的 AI 工具」统一迁入设置 › AI自动化；环境默认允许 AI 控制；支持 5 组真实指令轮播；顶栏与底栏新增「AI 已启用」真实状态指示；autoSync 默认开启且安全加固（仅刷新已连接客户端）。</p>
+      ]]></description>
+      
+      <enclosure
+        url="https://github.com/XideaDev/NETAir.APP/releases/download/v1.3.9/NETAir-1.3.9-Universal.zip"
+        length="53554297"
+        type="application/octet-stream"
+        sparkle:edSignature="8W+Jz4+bGXHH8st01Ra5AC3TY/JnAUGuYSjLeT+OAW31BY9pDcWQFAWw9+EwhhVn9VHzjazeSbi+x93IWHBGDg==" />
+    </item>
+
     <!-- v1.3.8 版本项 -->
     <item>
       <title>NETAIR 1.3.8</title>
