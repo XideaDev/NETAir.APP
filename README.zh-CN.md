@@ -8,7 +8,7 @@
     macOS 14+ Sonoma 与 macOS 15+ Sequoia 原生架构 · Apple WebKit 真实内核 · 绝对零 JS 注入 · 全协议代理 Fail-Closed 严格熔断 · macOS 26+ Liquid Glass 流体玻璃设计
   </p>
   <p>
-    <a href="https://github.com/XideaDev/NETAir.APP/releases/latest"><img src="https://img.shields.io/badge/Release-v1.3.6-0F6FD4?style=for-the-badge&logo=apple" alt="Release v1.3.6" /></a>
+    <a href="https://github.com/XideaDev/NETAir.APP/releases/latest"><img src="https://img.shields.io/badge/Release-v1.3.8-0F6FD4?style=for-the-badge&logo=apple" alt="Release v1.3.8" /></a>
     <img src="https://img.shields.io/badge/macOS-14.0%2B-1d1d1f?style=for-the-badge&logo=apple" alt="macOS 14.0+" />
     <img src="https://img.shields.io/badge/Architecture-Universal%20(arm64%20%2B%20x86__64)-34C759?style=for-the-badge" alt="Universal" />
     <img src="https://img.shields.io/badge/Engine-Native%20WebKit-007AFF?style=for-the-badge&logo=safari" alt="Native WebKit" />
@@ -196,10 +196,10 @@ NX="/Applications/NETAir.app/Contents/MacOS/NETAir"
 
 | 发布归档包 | 适配架构 | 构建说明 | 下载地址 |
 |---|---|---|---|
-| **`NETAir-1.3.6-Universal.zip`** | **Universal** (`arm64` + `x86_64`) | 最新正式版本 (Build 75) | [**立即下载最新版 (GitHub Releases)**](https://github.com/XideaDev/NETAir.APP/releases/latest) |
+| **`NETAir-1.3.8-Universal.zip`** | **Universal** (`arm64` + `x86_64`) | 最新正式版本 (Build 91) | [**立即下载最新版 (GitHub Releases)**](https://github.com/XideaDev/NETAir.APP/releases/latest) |
 
 ### 安装与首次启动指引：
-1. 下载并解压 **`NETAir-1.3.6-Universal.zip`**；
+1. 下载并解压 **`NETAir-1.3.8-Universal.zip`**；
 2. 将 **`NETAir.app`** 拖移至你的 **`/Applications`**（应用程序）目录；
 3. 若首次打开时系统 Gatekeeper 弹出“未受信任”或“已损坏”提示（本地 ad-hoc 签名特征），在终端执行一次解禁即可：
    ```bash
@@ -240,7 +240,7 @@ rm -rf /Applications/NETAir.app && cp -R "dist/NETAir.app" /Applications/
 ### 标准自动化发版流程 (SOP)
 ```bash
 # 执行原子化编译、双轨 Ed25519 签名、XML 校验与 GitHub Release 自动发布
-./scripts/release.sh 1.3.6 "NETAIR 1.3.6" "发布说明"
+./scripts/release.sh 1.3.8 "NETAIR 1.3.6" "发布说明"
 ```
 
 ---

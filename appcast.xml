@@ -6,6 +6,30 @@
     <description>NETAIR 自动更新推送流 (托管于 GitHub Releases)</description>
     <language>zh-CN</language>
 
+    <!-- v1.3.8 版本项 -->
+    <item>
+      <title>NETAIR 1.3.8</title>
+      <pubDate>Wed, 04 Nov 2026 12:55:20 +0800</pubDate>
+      <sparkle:version>91</sparkle:version>
+      <sparkle:shortVersionString>1.3.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <netair:securityTicket
+        dohServer="https://8.8.8.8/dns-query"
+        issuedAt="1793768120"
+        expiresAt="1825304120"
+        signature="5XnX/CsLXJ19ZZz+o5ygnm6TDrLXHTzHoCgr6oeT+Sg3Ky8erRKUQgv8EfjakvDct1pUmk7UHtMk3tSun6ZaCg==" />
+      <description><![CDATA[
+        <h3>NETAIR 1.3.8</h3>
+        <p>安全加固与体验升级</p>
+      ]]></description>
+      
+      <enclosure
+        url="https://github.com/XideaDev/NETAir.APP/releases/download/v1.3.8/NETAir-1.3.8-Universal.zip"
+        length="53149964"
+        type="application/octet-stream"
+        sparkle:edSignature="ROBR/mZkNdO6IB83hMuDWSBr8La5pwJ60o1Ymo/nzSOyiycpudObrIpw5oD6nsXxZjNk9/9SfOo+x6nUpwy7CQ==" />
+    </item>
+
     <!-- v1.3.7 版本项 -->
     <item>
       <title>NETAIR 1.3.7</title>
